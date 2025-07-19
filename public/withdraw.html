@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سحب النقاط | QuizGame</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="withdraw-header">
+        <h1>سحب النقاط</h1>
+        <a href="/index.html" class="back-btn">رجوع</a>
+    </header>
+
+    <main class="withdraw-container">
+        <div class="points-balance">
+            <h3>رصيدك الحالي</h3>
+            <p id="withdrawPoints">0 نقطة</p>
+        </div>
+
+        <div class="withdraw-target">
+            <h3>الهدف الحالي للسحب</h3>
+            <p id="targetAmount">3000 نقطة (30 جنيهاً)</p>
+        </div>
+
+        <form id="withdrawForm">
+            <div class="input-group">
+                <label for="withdrawPhone">رقم الهاتف</label>
+                <input type="tel" id="withdrawPhone" required>
+            </div>
+
+            <div class="payment-methods">
+                <h3>طريقة السحب</h3>
+                <div class="methods-grid">
+                    <label class="method-option">
+                        <input type="radio" name="method" value="vodafone" checked>
+                        <img src="/images/providers/vodafone-cash.png" alt="فودافون كاش">
+                    </label>
+                    <!-- نفس الشيء لباقي الطرق -->
+                </div>
+            </div>
+
+            <button type="submit" class="btn-primary" id="withdrawBtn" disabled>طلب السحب</button>
+        </form>
+    </main>
+
+    <script src="/js/withdraw.js"></script>
+    <script src="/js/config.js"></script>
+    <script src="/js/auth.js"></script>
+</body>
+</html>
