@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأسئلة | QuizGame</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/animations.css">
+</head>
+<body>
+    <header class="quiz-header">
+        <div class="quiz-progress">
+            <span id="currentQuestion">1</span>/<span id="totalQuestions">10</span>
+        </div>
+        <div class="quiz-points">
+            النقاط: <span id="quizPoints">0</span>
+        </div>
+    </header>
+
+    <main class="quiz-container">
+        <div class="question-card" id="questionCard">
+            <h2 id="questionText">جاري تحميل السؤال...</h2>
+            <div class="options-container" id="optionsContainer">
+                <!-- سيتم إضافة الخيارات عبر JavaScript -->
+            </div>
+        </div>
+
+        <div class="quiz-result" id="quizResult" style="display: none;">
+            <span id="resultIcon"></span>
+            <p id="resultText"></p>
+        </div>
+    </main>
+
+    <div class="quiz-ads" id="quizAds">
+        <!-- إعلانات AdMob ستظهر هنا -->
+    </div>
+
+    <script src="/js/questions.js"></script>
+    <script src="/js/config.js"></script>
+    <script src="/js/auth.js"></script>
+</body>
+</html>
