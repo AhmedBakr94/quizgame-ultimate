@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم | QuizGame</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="admin-page">
+    <header class="admin-header">
+        <h1>لوحة التحكم</h1>
+        <button id="adminLogout">تسجيل الخروج</button>
+    </header>
+
+    <main class="admin-container">
+        <section class="admin-section">
+            <h2>العروض الترويجية</h2>
+            <form id="offerForm">
+                <textarea id="offerText" placeholder="اكتب العرض الترويجي هنا..."></textarea>
+                <button type="submit" class="btn-primary">حفظ العرض</button>
+            </form>
+        </section>
+
+        <section class="admin-section">
+            <h2>إضافة نقاط</h2>
+            <form id="addPointsForm">
+                <input type="tel" id="userPhone" placeholder="رقم الهاتف">
+                <input type="number" id="pointsAmount" placeholder="عدد النقاط">
+                <button type="submit" class="btn-primary">إضافة النقاط</button>
+            </form>
+        </section>
+
+        <section class="admin-section">
+            <h2>طلبات السحب</h2>
+            <div class="withdraw-requests" id="withdrawRequests">
+                <!-- سيتم ملؤها عبر JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <script src="/js/admin.js"></script>
+    <script src="/js/config.js"></script>
+</body>
+</html>
